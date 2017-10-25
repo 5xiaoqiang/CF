@@ -1,0 +1,226 @@
+@import'reset';
+.trigon{
+	width:0;
+	height:0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom:8px solid #fff;
+}
+.header{
+	width: 1583px;
+	height: 640px;
+	display: inline-block;
+	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/content1_bg-7cb3991281eedd065030e80f7ffd4634.jpg);
+	.header1{
+		width: 1220px;
+		height: 120px;
+		margin:0 auto 0;
+		padding:0 20px 0 20px;
+		box-sizing:border-box;
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+		.a{
+			float:left;
+			width: 124px;
+			height: 48px;
+			margin-top: 36px;
+			background: url(http://cfbassets.b0.upaiyun.com/assets/v2/logo-fa8e729626160b3f139584380142d0e0.png);
+		}
+		ul{
+			float:left;
+			li{
+				font-size: 20px;
+				color:#fff;
+				display: inline-block;
+				margin-left: 60px;
+				cursor: pointer;
+				line-height: 120px;
+				position: relative;
+				div{ 
+					width: 120px;
+    				height: 100px;
+    				background: #fff;
+    				color:#000;
+    				text-align: center;
+    				display: none;
+    				position: absolute;
+    				left:-175px;
+    				top:95px;
+					p{
+					font-size: 14px;
+					line-height: 50px;
+					cursor: pointer;
+					border-bottom: 1px solid #ccc;
+						a{
+							text-decoration: none;
+							color:#000;
+						}
+					}
+					.Self-helpcustom{
+						border-bottom:none;
+					}
+					span{
+						display: block;
+						@extend.trigon;
+						position: absolute;
+						top:-8px;
+						left:52.5px;
+					}
+				}
+
+			}
+		}
+		div{
+			float: left;
+   			 margin-left: 130px;
+   			 line-height: 120px;
+   			 position: relative;
+			input{
+				width: 320px;
+			    height: 60px;
+			    border: none;
+			    background-color: transparent;
+			    color: white;
+			    padding-left: 20px;
+			    font: inherit;
+			    border-radius: 4px;
+			    line-height: 60px;
+			    box-sizing: border-box;
+			    background-color: rgba(255,255,255,0.1);
+			}
+			input::-webkit-input-placeholder{
+			    color:#c5ccb9;
+			}
+			i{
+				width: 30px;
+				height: 30px;
+				position: absolute;
+			    right: 10px;
+			    top: 44px;
+				display: inline-block;
+				cursor: pointer;
+				background: url(http://cfbassets.b0.upaiyun.com/assets/v2/icon-3518a8793473b0760bf300374c9eb766.png);
+
+			}
+		}
+		.enroll{
+			float:right;
+			ul{
+				font-size: 20px;
+				li{
+				    float: left;
+				    width: 40px;
+				    margin-left: 0;
+				    a{
+				    	color:#fff;
+				    	text-decoration: none;
+				    }
+				}
+				span{
+					float: left;
+					color:#fff;
+				}
+			}
+		}
+	}
+	.enjoyment{
+		margin:180px auto 0;
+		display: block;
+		width: 382px;
+		height: 168px;
+	}
+}
+.clearFix::after{
+	height:0;
+	display: block;
+	content:'';
+	clear:both;
+}
+nav{
+	div{
+		float:left;
+		width: 50%;
+		height: 480px;
+		box-sizing: border-box;
+		img{
+			display:block;
+			margin:30px auto;
+		}
+		p{
+			height: 21px;
+			font-size: 16px;
+   			color: #666;
+   			text-align: center;
+		}
+		a{
+			display: block;
+			text-align: center;
+			button{
+			    background-color: #cdac65;
+    			cursor: pointer;
+			    width: 240px;
+			    height: 80px;
+			    line-height: 80px;
+			    font-size: 28px;
+			    color: #fff;
+			    border: none;
+			    border-radius: 4px;
+			    margin-top: 30px;
+			}
+		}
+	}
+}
+.purpose{
+	width: 100%;
+	h1{
+	    font-size: 40px;
+	    color: #2d3a40;
+	    text-align: center;
+	    height: 120px;
+	    line-height: 120px;
+	    font-weight: normal;
+	}
+	.carousel{
+		width: 1180px;
+		height: 475px;
+		padding-left:20px;
+		padding-right: 20px;
+		margin:0 auto;
+		.carousel1{
+			width: 100%;
+			height: 475px;
+			border:1px solid #ddd;
+			overflow: hidden;
+			position: relative;
+			.inner{
+				width: 300%;
+				position: absolute;
+				a{
+					li{
+						height: 475px;
+					    float: left;
+					    width: 295px;
+					    position: relative;
+					    .detail{
+					    	height: 160px;
+						    position: absolute;
+						    bottom: 0;
+						    left: 0;
+						    color: white;
+						    padding-left: 30px;
+						    padding-top: 63px;
+						    font-size: 20px;
+						    font-weight: bold;
+						    line-height: 1.8;
+						    p{
+						    	width: 260px;
+					    	    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+						    }
+					    }
+					}
+				}
+			}
+		}
+	}
+}
