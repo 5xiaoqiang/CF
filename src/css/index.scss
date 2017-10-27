@@ -7,7 +7,7 @@
 	border-bottom:8px solid #fff;
 }
 .header{
-	width: 1583px;
+	width: 100%;
 	height: 640px;
 	display: inline-block;
 	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/content1_bg-7cb3991281eedd065030e80f7ffd4634.jpg);
@@ -181,7 +181,7 @@ nav{
 	}
 	.carousel{
 		width: 1180px;
-		height: 475px;
+		height: 575px;
 		padding-left:20px;
 		padding-right: 20px;
 		margin:0 auto;
@@ -203,7 +203,7 @@ nav{
 					    .detail{
 					    	height: 160px;
 						    position: absolute;
-						    bottom: 0;
+						    bottom: -60px;
 						    left: 0;
 						    color: white;
 						    padding-left: 30px;
@@ -218,9 +218,392 @@ nav{
 							    white-space: nowrap;
 						    }
 					    }
+					    .pop-mark{
+					    	position: absolute;
+						    left: 0;
+						    top: 0;
+						    z-index: 99;
+						    background-color: rgba(0,0,0,0.6);
+						    width: 100%;
+						    height: 475px;
+						    text-align: center;
+						    display: none;					    	.mark{
+					    	margin-top: 138px;
+					    	}
+					    	p{
+					    		color: white;
+ 							   font-size: 20px;
+					    		margin-top: 20px;
+					    	}
+					    	
+					    }
 					}
 				}
 			}
 		}
+		.page{
+			width: 159px;
+		    height: 4px;
+		    margin: 0 auto;
+		    margin-top: 40px;
+		    overflow: hidden;
+			li{
+				float:left;
+				width: 48px;
+				height: 4px;
+				margin-left: 5px;
+				background: #ccc;
+				cursor: pointer;
+			}
+			li:first-child{
+				background: #000;
+			}
+		}
 	}
+}
+.afflatus{
+	width: 100%;
+	height: 900px;
+	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/bg2-e150cef21f7e2b00e465e630dbe7c138.jpg);
+	.inspiration{
+		width: 1220px;
+		height: 120px;
+		margin:0 auto;
+		.rebatch{
+			float:left;
+			margin-left:20px;
+			line-height: 120px;
+			color:#fff;
+			font-size: 20px;
+			 i{
+			width: 36px;
+			height: 36px;
+			display:inline-block;
+			margin-right: 20px;
+			vertical-align: middle;
+			margin-top: -10px;
+			background:url(http://cfbassets.b0.upaiyun.com/assets/v2/icon-3518a8793473b0760bf300374c9eb766.png);
+			background-position: -30px 0px;	
+			}
+		}
+		h2{
+			float:left;
+			font-size: 40px;
+		    color: #fff;
+		    height: 120px;
+		    line-height: 120px;
+		    font-weight: normal;
+		    margin-left: 430px;
+		}	
+		p{
+			float:right;
+   			 line-height: 120px;
+   			 a{
+   			 	color: #fff;
+   			 	font-size: 20px;
+   			 	display: inline-block;
+   			 	margin-left: 60px;
+   			 	text-decoration:none;
+   			 }
+   			 a:last-child{
+   			 	margin-right: 20px;
+   			 }
+		}
+	}
+	.route1{
+		width: 1220px;
+		height: 780px;
+		margin:0 auto;
+		.route{
+			box-sizing: border-box;
+		    border-radius: 4px;
+		    height: 214px;
+		    position: relative;
+		    color: white;
+		    width: 380px;
+		    float: left;
+		    margin-left: 20px;
+		    margin-bottom: 20px;
+		    img{
+		    	height: 100%;
+			    width: 100%;
+			    border-radius: 4px;
+		    }
+		    .wrap{
+		    	width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    z-index: 2;
+			    border-radius: 4px;
+			    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+				display: table;
+				.inner1{
+					display: table-cell;
+				    vertical-align: middle;
+				    text-align: center;
+				    color: white;
+				    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+					.type{
+						width: 48px;
+					    height: 24px;
+					    display: inline-block;
+					    text-align: center;
+					    line-height: 24px;
+					    background-color: rgba(255,255,255,0.2);
+					    color: white;
+					    font-size: 12px;
+					    border-radius: 12px;
+					    margin-bottom: 5px;
+					}    
+				    h2{
+				    	font-size:24px;
+					    width: 340px;
+					    height: 31px;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					    margin-left: 20px;
+				    }
+				    p{
+			    	    font-size: 12px;
+					    margin-top: 8px;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					    width: 340px;
+					    margin-left: 20px;
+				    }
+					.avatar{
+					    width: 32px;
+					    height: 32px;
+					    display: inline-block;
+					    margin-top: 12px;
+					    border-radius: 50%;
+					    img{
+				    	    border-radius: 50%;
+						    width: 100%;
+						    height: 100%;
+						    box-sizing: border-box;
+						    border: 2px solid rgba(255,255,255,0.1);
+					    }
+					}
+				}
+		    }
+		}
+	}
+}
+.impression{
+    width: 100%;
+    background-color: #f0f3f5;
+    padding-bottom: 50px;
+    .impress{
+    	width: 1220px;
+    	height: 120px;
+    	margin:0 auto;
+    	text-align: center;
+	    font-size: 40px;
+	    color: #2d3a40;
+	    line-height: 120px;
+    }
+    .Pinterest{
+    	width: 1220px;
+    	margin:0 auto;
+    	border:1px solid red;
+    	overflow: hidden;
+    	.yinxiang{
+    		float: left;
+		    width: 280px;
+		    margin-top: 20px;
+		    margin-left: 20px;
+		    overflow: hidden;
+		    padding: 4px;
+		    background-color: white;
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    -webkit-transition: all 0.3s ease-in;
+		    transition: all 0.3s ease-in;
+		    text-decoration: none;
+    		.img-cnt{
+	    		width: 100%;
+	    		img{
+	    			display: block;
+				    width: 100%;
+				    height: 100%;
+	    		}
+	    		p{
+	    			position: relative;
+				    z-index: 4;
+				    width: 270px;
+				    padding: 3px 14px 3px 0;
+				    margin-top: -24px;
+				    -webkit-box-sizing: border-box;
+				    -moz-box-sizing: border-box;
+				    box-sizing: border-box;
+				    font-size: 12px;
+				    text-align: right;
+				    text-indent: 10px;
+				    color: white;
+				    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+	    		}
+	    	}
+	    	.txt-cnt{
+	    		position: relative;
+			    padding: 16px;
+			    background-color: white;
+			    padding-bottom: 0;
+			    .txt{
+			    	font-size: 14px;
+				    color: #333;
+				    word-break: break-all;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    display: -webkit-box;
+				    -webkit-line-clamp: 3;
+				    -webkit-box-orient: vertical;
+			    }
+	    	}
+	    	.note-bottom{
+	    		color: #ccc;
+			    font-size: 14px;
+			    padding-left: 16px;
+			    padding-right: 16px;
+			    height: 48px;
+			    line-height: 48px;
+			    .fl{
+			    	float: left;
+				    width: 50%;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    i{
+				    	background: url(http://cfbassets.b0.upaiyun.com/assets/journals/icon_journal@2x-774d0501e4fb2a0af4ac5945729f11cd.png) no-repeat center;
+					    width: 20px;
+					    height: 24px;
+					    background-position: -192px 0;
+					    display: inline-block;
+					    vertical-align: middle;
+				        transform: scale(0.7);
+				    }
+			    }
+			    .fr{
+			    	float: right;
+				    width: 50%;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    text-align: right;
+			    }
+	    	}
+    	}
+    	
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 1583px;
+    height: 240px;
+    background-color: #2d3a40;
+    .content{
+    	width: 1220px;
+	    height: 240px;
+	    margin: 0 auto;
+	    .pc .left{
+			height: 240px;
+		    margin-left: 20px;
+		    padding-top: 40px;
+		    width: 660px;
+		    position: relative;
+		    float: left;
+		    box-sizing: border-box;
+		    .logo{
+	    	    width: 124px;
+			    height: 48px;
+			    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/logo-fa8e729626160b3f139584380142d0e0.png);
+		    }
+		    .ques{
+		    	margin-top: 30px;
+		    	li{
+	    		    float: left;
+				    font-size: 16px;
+				    color: #8fa9b2;
+		    	}
+		    }
+		    .icp-pc{
+		    	font-size: 12px;
+			    color: #8fa9b2;
+			    width: 100%;
+			    display: block;
+			    float: left;
+			    margin-top: 10px;
+		    }
+		    .kefu{
+		    	width: 236px;
+			    height: 30px;
+			    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/kefu-cb3e9b2c88de6ce762f57e2120ab87d1.png);
+			    position: absolute;
+			    right: 0;
+			    top: 110px;
+		    }
+	    }
+	    .right{
+	    	float: left;
+	    	li{
+	    		float: left;
+			    margin-left: 40px;
+			    margin-top: 40px;
+			    .mark2{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark2-5536a807d46eaf88af89bff8502a6706.png);
+			    }
+			    .mark1{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark1-3487be04af0e64c69af34830a6f3a9e8.png);
+			    }
+			    .mark3{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark3-0af143498f69f750f66ece64eea094c6.png);
+			    }
+			    p{
+		    	    text-align: center;
+				    font-size: 16px;
+				    color: #5c6c73;
+				    margin-top: 10px;
+			    }
+	    	}
+	    }
+    }
 }

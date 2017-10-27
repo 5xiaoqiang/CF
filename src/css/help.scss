@@ -1,0 +1,389 @@
+@import'reset';
+li{
+	list-style:none;
+}
+.li-logo{
+    display: block;
+    float: left;
+    width: 124px;
+    height: 48px;
+    overflow: hidden;
+    text-indent: -999em;
+    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/logo-fa8e729626160b3f139584380142d0e0.png);
+    background-size: 100% 100%;
+    margin-top: 16px;
+}
+.head-container{
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 80px;
+    z-index: 100;
+    background-color: #2d3a40;
+    .header{
+    	width: 1220px;
+	    height: 80px;
+	    margin: 0 auto;
+	    line-height: 80px;
+	    padding: 0 20px 0 20px;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    .nav-pc{
+	    	float: left;
+    		text-align: center;
+    		li{
+    			float: left;
+			    font-size: 20px;
+			    color: #fff;
+			    margin-left: 60px;
+			    position: relative;
+			    cursor: pointer;
+			    a{
+			    	color:#fff;
+			    	text-decoration:none;
+			    }
+			    .subitem{
+				    position: absolute;
+				    display: none;
+				    width: 120px;
+				    height: 100px;
+				    margin-left: -45px;
+				    z-index: 99;
+				    left: 0;
+				    top: 70px;
+				    line-height: 20px;
+				    background-color: white;
+				    color: #333;
+				    padding-left: 5px;
+				    padding-right: 5px;
+				    -webkit-box-sizing: border-box;
+				    -moz-box-sizing: border-box;
+				    box-sizing: border-box;
+				    div{
+			    	    height: 50px;
+					    line-height: 50px;
+					    font-size: 14px;
+					    a{
+					    	color:#333;
+					    }
+				    }
+				    div:first-child{
+				    	border-bottom: 1px solid #ccc;
+				    }
+			    }
+    		}
+	    }
+	    .search-outter{
+	    	position: relative;
+		    width: 320px;
+		    height: 120px;
+		    float: left;
+		    margin-left: 130px;
+		    .search{
+		    	position: relative;
+			    width: 320px;
+			    height: 60px;
+			    display: inline-block;
+			    .input-txt{
+					width: 320px;
+				    height: 48px;
+				    border: none;
+				    background-color: transparent;
+				    color: white;
+				    padding-left: 20px;
+				    padding-right: 60px;
+				    border-radius: 4px;
+				    line-height: 48px;
+				    background-color: rgba(255,255,255,0.1);
+				    -webkit-box-sizing: border-box;
+				    -moz-box-sizing: border-box;
+				    box-sizing: border-box;
+			    }
+			    input::-webkit-input-placeholder{
+			   			 color:#c5ccb9;
+			   			 font-size: 16px;
+				}
+			    button{
+			    	border: none;
+				    cursor: pointer;
+				    position: absolute;
+				    right: 0;
+				    top: -2px;
+				    i{
+				    	width: 30px;
+					    height: 30px;
+					    position: absolute;
+					    right: 10px;
+					    top: 28px;
+					    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/icon-3518a8793473b0760bf300374c9eb766.png);
+				    }
+			    }
+		    }
+	    }
+	    .my-links{
+    	    position: relative;
+		    float: right;
+		    margin-top: 0;
+		    li{
+		    	float: left;
+			    font-size: 20px;
+			    color: #fff;
+			    a{
+		    	    color: #fff;
+		    	    text-decoration: none;
+			    }
+		    }
+	    }
+    }
+}
+.enjoy{
+	margin-top: 80px;
+	width: 1583px;
+	height: 720px;
+	position: relative;
+	img{
+		width: 100%;
+	}
+	.enjoy1{
+		    width: 600px;
+		    height: 300px;
+		    position: absolute;
+		    left: 31%;
+		    top: 29%;
+		    text-align: center;
+		button{
+			border: none;
+		    width: 240px;
+		    height: 80px;
+		    text-align: center;
+		    line-height: 80px;
+		    font-size: 24px;
+		    border-radius: 4px;
+		    display: inline-block;
+		    margin-top: 80px;
+		    cursor: pointer;
+		    background:#00cda9;
+		    color: white;
+		}
+
+	}
+}
+.enjoy2{
+	width: 100%;
+	margin-top:230px;
+	margin-bottom:40px;
+	.HighPoint{
+		height: 600px;
+		width: 1180px;
+		margin:0 auto;
+	}
+}
+ 
+.li{
+	height: 640px;
+	background: url(http://img.chufaba.me/3431755e6c2ecc4b9a3411f21d02c63d.jpg);
+}	
+.con{
+	width: 1180px;
+	height: 640px;
+	margin:0 auto;
+	overflow: hidden;
+	.tip{
+		margin-top: 180px;
+		float:right;
+	}
+}
+
+.li1{
+	height: 640px;
+	background: url(http://img.chufaba.me/3e8bcc2b1d9789eafb60da864520d207.jpg);
+}
+.li2{
+	height: 640px;
+	background: url(http://img.chufaba.me/5aaf3d2ade2d2258aeb2254b3324bfe2.jpg);
+	.tip2{
+		margin-top: 137px;
+	}
+}
+.charge{
+	margin-bottom: 100px;
+	h1{
+		height: 120px;
+		width: 1220px;
+		margin:0 auto;
+	    font-size: 40px;
+   		color: #2d3a40;
+		line-height: 120px;
+		text-align: center;
+		font-weight: normal;
+	}
+	.standard{
+		width: 1180px;
+		height: 496px;
+		margin:0 auto;
+		display:block;
+	}
+	.standard1{
+		width: 1180px;
+		height: 200px;
+		margin:0 auto;
+		display:block;
+	}
+}
+.inner{
+	height: 720px;
+    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/bg2-e150cef21f7e2b00e465e630dbe7c138.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    // position: relative;
+    .cont{
+    	.title{
+    		height: 120px;
+			width: 1220px;
+			margin:0 auto;
+		    font-size: 40px;
+	   		color: #fff;
+			line-height: 120px;
+			text-align: center;
+			font-weight: normal;	
+			border-bottom: 1px solid rgba(255,255,255,0.2);	
+    	}
+    	.wrapper{
+		    text-align: center;
+		    margin-top: 60px;
+		    width:100%;
+		    height: 420px;
+		    position: relative;
+		    .design{
+		    	width: 100%;
+		    	opacity: 0;
+		    	position: absolute;
+		    	top:0;
+		    	left:0;
+		    	.subtitle{
+		    		font-size: 20px;
+				    font-weight: bold;
+				    color: white;
+				    line-height: 1.5;
+		    	}
+		    	.text{
+		    		width: 1070px;
+		    		height: 80px;
+		    		line-height: 40px;
+		    		margin:40px auto;
+		    		font-size: 16px;
+   					 color: #fff;
+		    	}
+		    }
+		    .design:first-child{
+		    	opacity: 1;
+		    }
+    	}
+    }
+}
+.content6{
+    width: 100%;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    .inner1{
+    	width: 1220px;
+    	margin:0 auto;
+    	.btn-now{
+    		border: none;
+		    width: 240px;
+		    height: 80px;
+		    text-align: center;
+		    line-height: 80px;
+		    font-size: 24px;
+		    border-radius: 4px;
+		    display: inline-block;
+		    margin-top: 80px;
+		    cursor: pointer;
+		    background:#00cda9;
+		    color: white;
+    	}
+    }
+}
+.footer{
+    width: 1583px;
+    height: 240px;
+    background-color: #2d3a40;
+    .content{
+    	width: 1220px;
+	    height: 240px;
+	    margin: 0 auto;
+	    .pc .left{
+			height: 240px;
+		    margin-left: 20px;
+		    padding-top: 40px;
+		    width: 660px;
+		    position: relative;
+		    float: left;
+		    box-sizing: border-box;
+		    .logo{
+	    	    width: 124px;
+			    height: 48px;
+			    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/logo-fa8e729626160b3f139584380142d0e0.png);
+		    }
+		    .ques{
+		    	margin-top: 30px;
+		    	li{
+	    		    float: left;
+				    font-size: 16px;
+				    color: #8fa9b2;
+		    	}
+		    }
+		    .icp-pc{
+		    	font-size: 12px;
+			    color: #8fa9b2;
+			    width: 100%;
+			    display: block;
+			    float: left;
+			    margin-top: 10px;
+		    }
+		    .kefu{
+		    	width: 236px;
+			    height: 30px;
+			    background: url(http://cfbassets.b0.upaiyun.com/assets/v2/kefu-cb3e9b2c88de6ce762f57e2120ab87d1.png);
+			    position: absolute;
+			    right: 0;
+			    top: 110px;
+		    }
+	    }
+	    .right{
+	    	float: left;
+	    	li{
+	    		float: left;
+			    margin-left: 40px;
+			    margin-top: 40px;
+			    .mark2{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark2-5536a807d46eaf88af89bff8502a6706.png);
+			    }
+			    .mark1{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark1-3487be04af0e64c69af34830a6f3a9e8.png);
+			    }
+			    .mark3{
+			    	width: 140px;
+			    	height: 140px;
+			    	display: block;
+			    	background: url(http://cfbassets.b0.upaiyun.com/assets/v2/mark3-0af143498f69f750f66ece64eea094c6.png);
+			    }
+			    p{
+		    	    text-align: center;
+				    font-size: 16px;
+				    color: #5c6c73;
+				    margin-top: 10px;
+			    }
+	    	}
+	    }
+    }
+}
