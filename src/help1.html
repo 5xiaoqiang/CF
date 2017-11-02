@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>出发吧 - 旅行计划</title>
+	 <link rel="shortcut icon" href="http://chufaba.me/favicon.ico">
+	 <link rel="stylesheet" type="text/css" href="css/help1.css">
+</head>
+<body>
+<div class="head-container">
+<a href="顶部"></a>
+  <div class="header">     
+    <a href="/"><div class="li-logo"></div></a>
+    <ul class="nav-pc">
+      <li><a href="/">首页</a></li>
+      <li class="dingzhi">
+        定制
+        <div class="subitem">
+          <div><a href="help.html">帮我定制</a></div>
+          <div><a href="">自助定制</a></div>
+        </div>
+      </li>
+      <li class="dingzhi">
+        灵感
+        <div class="subitem">
+          <div>
+            <a href="/journals/">
+              行程
+            </a>
+          </div>
+          <div>
+            <a href="/themes/">
+              去处
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <form method="GET" action="/search" class="search-outter">
+      <div class="search">
+        <input id="JS-cfb-input-search" name="keyword" class="input-txt" type="text" placeholder="搜索 国家或城市">
+        <button id="JS-cfb-btn-search" class="btn-search" type="button">
+            <i class="icon"></i>
+        </button>
+      </div>
+    </form>
+    <div class="action my-links">
+          <li>
+            <a href="">注册</a>&nbsp;/&nbsp;</li>
+          <li><a id="btn-cfb-login" href="">登录</a></li>
+    </div>
+  </div>
+</div>
+<div class="lunbo">
+	<div class="lunbo1">
+		<div class="lunbo2">
+			<div class="lunbo3 swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><img src="http://cfbassets.b0.upaiyun.com/assets/v2/screenshot1-8ca04828ad2b618ca6928da2f03b542e.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="http://cfbassets.b0.upaiyun.com/assets/v2/screenshot2-21623c452cbfa1b8890b43c314fee586.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="http://cfbassets.b0.upaiyun.com/assets/v2/screenshot3-253c252bbff816fb5568bb7be52879af.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="http://cfbassets.b0.upaiyun.com/assets/v2/screenshot4-bd5c757e1a017235cfea5c2b2bd5a07b.jpg" alt=""></li>
+					<li class="swiper-slide"><img src="http://cfbassets.b0.upaiyun.com/assets/v2/screenshot5-ab449c3990f365ca2e58beb3a53ba96c.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="NOW">
+			<img src="http://cfbassets.b0.upaiyun.com/assets/v2/image2_content1-238aabc43f4ba9551fc9a5dd000cc784.png" alt="">
+			<a></a>
+			<div>
+				<span>关注我们：
+				<a href=""></a>
+				<a href=""></a></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content2">
+  <div class="content">
+  </div>
+</div>
+<div class="arrange">
+	<div class="arrange1">
+		<p class="one"></p>
+		<p class="two"></p>
+	</div>
+</div>
+<div class="recommend">
+  <div class="recommend1">
+      <div class="recommend2">
+        <p></p>
+      </div>
+  </div>
+</div>
+<div class="scenic">
+  <div class="scenic1">
+    <p class="scenic2"></p>
+  </div>
+</div>
+<div class="map">
+  <div class="map1">
+    <p class="navigation"></p>
+  </div>
+  <div class="inventory"></div>
+</div>
+<div class="detailed">
+    <div class="detailed1"></div>
+    <div class="detailed2"></div>
+    <p></p>
+</div>
+
+<div class="footer">
+    <div class="content">
+        <div class="pc">
+            <div class="left">
+                <div class="logo"></div>
+                <ul class="ques">
+                    <a href="/about">
+                        <li>关于我们&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    </a>
+                    <a href="/faq">
+                        <li>常见问题&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    </a>
+                    <a href="/feedbacks/new">
+                        <li>意见反馈</li>
+                    </a>
+                </ul>
+                <p class="icp-pc">chufaba © 2016 沪ICP备14047730号</p>
+                <div class="kefu"></div>
+            </div>
+            <ul class="right">
+                <li>
+                    <i class="mark2"></i>
+                    <p>微信公众号</p>
+                </li>
+                <li>
+                    <i class="mark1"></i>
+                    <p>私人订制</p>
+                </li>
+                <li>
+                    <i class="mark3"></i>
+                    <p>APP下载</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<a href="#" class="Stick"></a>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<script type="text/javascript">
+	
+  var dingzhi = document.querySelectorAll('.dingzhi');
+  var subitem = document.querySelectorAll('.subitem');
+  var uls = document.querySelector('.lunbo3 ul');
+  var Stick1 = document.querySelector('.Stick');
+  // var document = document.querySelector('document');
+	 for(var z = 0; z < dingzhi.length;z++){
+    dingzhi[z].index = z;
+    dingzhi[z].onmouseenter = function(){
+      subitem[this.index].style.display = 'block';
+    }
+    dingzhi[z].onmouseleave = function(){
+      subitem[this.index].style.display = 'none';
+    }
+  }
+  
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        // spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        onlyExternal:true,
+        autoplayDisableOnInteraction: false,
+        loop:true,
+    });
+    $('.swiper-container').mouseenter(function(){
+       swiper.stopAutoplay();
+    })
+    $('.swiper-container').mouseleave(function(){
+        swiper.startAutoplay();
+    })
+    window.onscroll = function(){
+      var scroll = document.body.scrollTop + document.documentElement.scrollTop;
+      console.log(scroll);
+       if(scroll < 900){
+          Stick1.style.display = 'none';
+      }else{
+         Stick1.style.display = 'block';
+      }
+    }
+   
+</script>
+</body>
+</html>

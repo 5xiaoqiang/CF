@@ -38,20 +38,30 @@ li{
 			    font-size: 20px;
 			    color: #fff;
 			    margin-left: 60px;
-			    position: relative;
 			    cursor: pointer;
 			    a{
 			    	color:#fff;
 			    	text-decoration:none;
 			    }
+			    .subitem:after{
+			    	content: '';
+			    	width: 0;
+			    	height: 0;
+			    	border-left:7px solid transparent;
+			    	border-right:7px solid transparent;
+			    	border-bottom: 7px solid #fff;
+			    	position: fixed;
+			    	top:63px;
+			    	margin-left: -7px;
+			    }
 			    .subitem{
-				    position: absolute;
+				    position: fixed;
 				    display: none;
 				    width: 120px;
 				    height: 100px;
 				    margin-left: -45px;
 				    z-index: 99;
-				    left: 0;
+				    // left: 0;
 				    top: 70px;
 				    line-height: 20px;
 				    background-color: white;
@@ -237,7 +247,6 @@ li{
     background: url(http://cfbassets.b0.upaiyun.com/assets/v2/bg2-e150cef21f7e2b00e465e630dbe7c138.jpg) no-repeat;
     background-size: cover;
     margin: 0 auto;
-    // position: relative;
     .cont{
     	.title{
     		height: 120px;
@@ -280,6 +289,22 @@ li{
 		    .design:first-child{
 		    	opacity: 1;
 		    }
+    	}
+    	.page{
+    		width: 164px;
+    		margin:70px auto 0;
+    		overflow: hidden;
+    		li{
+    			float:left;
+    			width: 48px;
+    			height: 4px;
+    			cursor: pointer;
+    			margin-left: 5px;
+				background:rgba(255,255,255,0.4);
+    		}
+    		li:first-child{
+    			background: #fff;
+    		}
     	}
     }
 }

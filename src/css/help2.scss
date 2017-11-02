@@ -1,0 +1,181 @@
+@import'reset';
+.background{
+	width: 100%;
+	height:794px;
+	background: url(http://cfbassets.b0.upaiyun.com/assets/common/zzz_bg_lr-5866c48cf656926551414f9af8f3d5c1.jpg);
+	background-size: cover;
+	    background-position: 50% 50%;
+	.background1{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		.register{
+			width: 280px;
+			height: 710px;
+			margin:0 auto;
+			overflow: hidden;
+			.register1{
+				width: 98px;
+				height: 98px;
+				display:block;
+				background: url(http://cfbassets.b0.upaiyun.com/assets/common/icon_login-baa5f16b8c91d25c4635149ffade72aa.png);
+				background-position: 0 -115px;
+				margin:40px auto;
+			}
+			.register2{
+				height: 16px;
+				width: 100%;
+				overflow: hidden;
+				a{
+					height: 1px;
+					width: 85px;
+					display: inline-block;
+					float:left;
+					margin-top: 7.5px;
+					background: rgba(255,255,255,0.2);
+				}
+				a:last-child{
+					float:right;
+				}
+				span{
+					margin-left: 22px;
+					font-size: 16px;
+					color:#fff;
+				}
+			}
+			.TextField{
+				div{
+					position: relative;
+					i{
+						width: 16px;
+						height: 16px;
+						display: inline-block;
+						position: absolute;
+						top:17px;
+						right:10px;
+						display: none;
+						background: url(http://cfbassets.b0.upaiyun.com/assets/common/icon_login-baa5f16b8c91d25c4635149ffade72aa.png);
+						background-position: -38px -64px;
+					}
+				}
+			}
+			.TextField{
+				width: 100%;
+				height: 196px;
+				background: #fff;
+				margin: 20px 0 10px;
+				border-radius: 4px;
+				input{
+					width: 233px;
+					height: 18px;
+					padding:15px 35px 15px 12px;
+					border:none;
+					font:inherit;
+					border-top: 1px solid #e6e6e6;
+					border-radius: 4px;
+				}
+				input::-webkit-input-placeholder{
+					color:#e6e6e6;
+				}
+			}
+			.agreement{
+				width: 100%;
+				height: 60px;
+				color: #fff;
+				font-size: 12px;
+				input{
+					margin:0 8px 0 0;
+					cursor: pointer;
+				}
+				a{
+					color:#3c9;
+					cursor: pointer;
+					text-decoration: none;
+				}
+				a:hover{
+					text-decoration: underline;
+				}
+			}
+			.button{
+				width: 278px;
+				height: 46px;
+				margin:0 auto 40px;
+				button{
+					width: 100%;
+					height: 46px;
+					border:none;
+					background: #3c9;
+					border-radius: 4px;
+					font: inherit;
+					color:#fff;
+					cursor: pointer;
+				}
+			}
+			.qita{
+				height: 110px;
+				text-align: center;
+				a{
+					display: inline-block;
+					width: 64px;
+					height: 64px;
+					margin-top: 35px;
+					border-radius:50%;
+					border:1px solid #fff;
+					margin-left: 40px;
+					i{
+						width: 32px;
+						height: 30px;
+						display:block;
+						margin:17px auto;
+						background: url(http://cfbassets.b0.upaiyun.com/assets/common/icon_login-baa5f16b8c91d25c4635149ffade72aa.png);
+					}
+				}
+				.One i{
+					background-position: -2px -2px;
+				}
+				.One:hover{
+					background: #fff;
+					i{
+					background-position: -2px -34px;
+					}
+				}
+				.Two i{
+					background-position: -34px -2px;
+				}
+				.Two:hover{
+					background: #fff;
+					i{
+					background-position: -34px -34px;
+					}
+				}
+				.Three i{
+					background-position: -66px -2px;
+				}
+				.Three:hover{
+					background: #fff;
+					i{
+					background-position: -66px -34px;
+					}
+				}
+				a:first-child{
+					margin-left: 0px;
+				}
+			}
+		}
+		button{
+			width: 278px;
+			height: 46px;
+			margin:0 auto;
+			border:1px solid rgba(255,255,255,0.2);
+			background: none;
+			color:#fff;
+			font-size: 16px;
+			border-radius: 4px;
+			display: block;
+			cursor: pointer;
+			a{
+				color:#3c9;
+			}
+		}
+	}
+}

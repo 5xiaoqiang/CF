@@ -1,17 +1,18 @@
-require.config({
-	paths:{
-        'eventie/eventie':'http://jq22.qiniudn.com/masonry-docs.min'
-        // 'swiper':'../js/swiper'
-    },
-    shim:{//用来配置不符合AMD规范的模块
-        'eventie/eventie':{
-            deps:['jquery']//配置依赖文件
-            // exports:'math'
-        }
-    }
-})
+// require.config({
+// 	paths:{
+//         'eventie/eventie':'http://jq22.qiniudn.com/masonry-docs.min',
+//         'jquery':'https://cdn.bootcss.com/jquery/1.11.2/jquery'
+//         // 'swiper':'../js/swiper'
+//     },
+//     shim:{//用来配置不符合AMD规范的模块
+//         'eventie/eventie':{
+//             deps:['jquery']//配置依赖文件
+//             // exports:'math'
+//         }
+//     }
+// })
 
-require(['jquery','eventie/eventie'],function($,pibu){
+require(['jquery'],function($){
 	// console.log(pibu);
 	var customization = document.querySelector('.customization');
 	var customization1 = document.querySelector('.customization1');
@@ -80,16 +81,10 @@ require(['jquery','eventie/eventie'],function($,pibu){
 	                 // console.log(data.items);
 	                for(var i = 0; i < data.items.length;i++){
 	                	// console.log(data.items[i].pc[0].rating);
-	                	Pinterest.innerHTML += '<a class="yinxiang" href="/notes/DdoTNzXrT4-5MLasaVXOkg" title="" target="_blanket"><div class="img-cnt"><img src="'+ data.items[i].pc[0].poi_category +'" alt=""><p class="photo-num">'+ data.items[i].pc[0].rating+'p' +'</p></div><div class="txt-cnt"><p class="txt">'+ data.items[i].pc[0].desc +'</p></div><div class="note-bottom"><span class="fl"><i class="icon-location"></i>'+ data.items[i].pc[0].poi_name +'</span><span class="fr">'+ data.items[i].pc[0].username +'</span></div></a>';
-	                }   
-					var $container = $('#masonry');
-					$container.imagesLoaded(function(){
-						$container.masonry({
-							itemSelector: '.yinxiang',
-							// gutter: 20,
-							isAnimated: true
-	          			});
-		    		});
+	                	Pinterest.innerHTML += '<a class="yinxiang box" href="/notes/DdoTNzXrT4-5MLasaVXOkg" title="" target="_blanket"><div class="img-cnt"><img src="'+ data.items[i].pc[0].poi_category +'" alt=""><p class="photo-num">'+ data.items[i].pc[0].rating+'p' +'</p></div><div class="txt-cnt"><p class="txt">'+ data.items[i].pc[0].desc +'</p></div><div class="note-bottom"><span class="fl"><i class="icon-location"></i>'+ data.items[i].pc[0].poi_name +'</span><span class="fr">'+ data.items[i].pc[0].username +'</span></div></a>';
+	               		
+	               }   
+				
 	            }
 	     });
 		 
@@ -97,8 +92,15 @@ require(['jquery','eventie/eventie'],function($,pibu){
 	});
 
 
-
-
+var deng = document.querySelector('.deng');
+var dengluye = document.querySelector('.dengluye');
+var guanbi = document.querySelector('.zhanghu h1 i');
+deng.onclick = function(){
+	dengluye.style.display = 'block';
+}
+guanbi.onclick = function(){
+	dengluye.style.display = 'none';
+}
 
 
 

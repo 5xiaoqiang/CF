@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>出发吧 - 旅行计划</title><link rel="shortcut icon" href="http://chufaba.me/favicon.ico"><link rel="stylesheet" href="css/help2.css"></head><body><div class="background"><div class="background1"><div class="register"><p class="register1"></p><p class="register2"><a></a> <span>注册账户</span> <a></a></p><div class="TextField"><div><input type="text" placeholder="邮箱"><i></i></div><div><input type="text" placeholder="用户名"><i></i></div><div><input type="password" placeholder="密码"><i></i></div><div><input type="password" placeholder="确认密码"><i></i></div></div><div class="agreement"><input type="checkbox">已同意 <a href="http://chufaba.me/terms/">《出发吧使用协议》</a><p style="text-align: center;margin-top: 15px;color:red" class="report"></p></div><div class="button"><button>注册</button></div><p class="register2"><a style="width: 115px"></a> <span style="margin-left: 18px">or</span> <a style="width: 115px"></a></p><div class="qita"><a href="" class="One"><i></i> </a><a href="" class="Two"><i></i> </a><a href="" class="Three"><i></i></a></div></div><button>已有账户？<a>立即登录</a></button></div></div><script type="text/javascript">var inp = document.querySelectorAll('.TextField div input');
+	var error = document.querySelectorAll('.TextField div i');
+	var btn = document.querySelector('.button button');
+	var check = document.querySelector('.agreement input');
+	var report = document.querySelector('.report');
+	// console.log(report);
+	var zz = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+	var psw = /^[a-z0-9]+$/i;
+	var yonghu = /^\w+$/;
+	btn.onclick = function(){
+		var inp1 = inp[0].value;
+		var inp2 = inp[1].value;
+		var inp3 = inp[2].value;
+		var inp4 = inp[3].value;
+		if(!zz.test(inp1)){
+			report.innerHTML = '邮箱格式不正确';
+			error[0].style.display = 'block';
+		}else if(zz.test(inp1)){
+			error[0].style.display = 'block';
+			error[0].style.backgroundPosition = '-20px -64px';
+			if(!yonghu.test(inp2)){
+				report.innerHTML = '输入用户名';
+				error[1].style.display = 'block';
+			}else if(yonghu.test(inp2)){
+				error[1].style.display = 'block';
+				error[1].style.backgroundPosition = '-20px -64px';
+				if(!psw.test(inp3)){
+					report.innerHTML = '输入密码';
+					error[2].style.display = 'block';
+				}else if(psw.test(inp3)){
+					error[2].style.display = 'block';
+					error[2].style.backgroundPosition = '-20px -64px';
+					// report.innerHTML = '再次确认密码';
+					if(inp3 != inp4){
+						error[3].style.display = 'block';
+						report.innerHTML = '再次确认密码';
+					}else if(inp3 = inp4){
+						error[3].style.display = 'block';
+						error[3].style.backgroundPosition = '-20px -64px';
+						report.innerHTML = '同意后提交';
+						if(check.checked != ''){
+							report.innerHTML = '注册成功！';
+							for(var i = 0; i < inp.length; i++){
+								inp[i].value = '';
+								error[i].style.display = 'none';
+								check.checked = '';
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}</script></body></html>

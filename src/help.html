@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>出发吧 - 旅行计划</title>
   <link rel="shortcut icon" href="http://chufaba.me/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/help.css">
 </head>
@@ -12,14 +12,14 @@
     <a href="/"><div class="li-logo"></div></a>
     <ul class="nav-pc">
       <li><a href="/">首页</a></li>
-      <li>
+      <li class="dingzhi">
         定制
         <div class="subitem">
-          <div><a href="/activities/23">帮我定制</a></div>
-          <div><a href="/home/download">自助定制</a></div>
+          <div><a href="">帮我定制</a></div>
+          <div><a href="help1.html">自助定制</a></div>
         </div>
       </li>
-      <li>
+      <li class="dingzhi">
         灵感
         <div class="subitem">
           <div>
@@ -114,15 +114,9 @@
         </div>
       </div>
       <ul class="page">
-        <li class="">
-          <div class="tag"></div>
-        </li>
-        <li class="">
-          <div class="tag"></div>
-        </li>
-        <li class="active">
-          <div class="tag"></div>
-        </li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </div>
 </div>
@@ -175,7 +169,56 @@
 
 
 
+<script type="text/javascript">
+  var design = document.querySelectorAll('.design');
+  var lis = document.querySelectorAll('.page li');
+  var dingzhi = document.querySelectorAll('.dingzhi');
+  var subitem = document.querySelectorAll('.subitem');
+  var index = 0;
+  autoPlay();
+  function autoPlay(){
+   timer = setInterval (function(){
+      index++;
+        for(var i = 0; i < design.length; i++){
+            design[i].style.opacity = '0';
+            lis[i].style.background = 'rgba(255,255,255,0.4)';
+        }
+        if(index > 2){
+          index = 0;
+        }
+        design[index].style.opacity = '1';
+        lis[index].style.background = '#fff';
+    },2000);
+  }
+  
+  for(var i = 0; i < lis.length; i++){
+    lis[i].index = i; 
+    lis[i].onmouseenter = function(){
+      
+      for(var j = 0; j < lis.length; j++){
+        lis[j].style.background = 'rgba(255,255,255,0.4)';
+        design[j].style.opacity = '0';
+      }
+      this.style.background = '#fff';
+      index = this.index;
+      design[index].style.opacity = '1';
+      clearInterval(timer);
+    }
+    lis[i].onmouseleave = function(){
+       autoPlay();
+    }
+  }
 
+  for(var z = 0; z < dingzhi.length;z++){
+    dingzhi[z].index = z;
+    dingzhi[z].onmouseenter = function(){
+      subitem[this.index].style.display = 'block';
+    }
+    dingzhi[z].onmouseleave = function(){
+      subitem[this.index].style.display = 'none';
+    }
+  }
+</script>
 
 
 
