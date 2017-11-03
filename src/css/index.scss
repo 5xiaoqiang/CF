@@ -127,6 +127,7 @@
 		display: block;
 		width: 382px;
 		height: 168px;
+		cursor: pointer;
 	}
 }
 .clearFix::after{
@@ -324,6 +325,7 @@ nav{
 		    float: left;
 		    margin-left: 20px;
 		    margin-bottom: 20px;
+		    cursor: pointer;
 		    img{
 		    	height: 100%;
 			    width: 100%;
@@ -400,7 +402,7 @@ nav{
     padding-bottom: 50px;
     .impress{
     	width: 1220px;
-    	height: 120px;
+    	height: 100px;
     	margin:0 auto;
     	text-align: center;
 	    font-size: 40px;
@@ -410,15 +412,10 @@ nav{
     .Pinterest{
     	width: 1220px;
     	margin:0 auto;
-    	border:1px solid red;
-    	overflow: hidden;
     	.yinxiang{
     		display: block;
-    		float: left;
-		    width: 280px;
 		    margin-top: 20px;
 		    margin-left: 20px;
-		    overflow: hidden;
 		    padding: 4px;
 		    background-color: white;
 		    -webkit-box-sizing: border-box;
@@ -502,8 +499,28 @@ nav{
     	
     }
 }
-
-
+#masonry{
+	ul{
+		float:left;
+		width: 24.57%;
+		li{
+			width: 100%;
+		}
+	}
+}
+#masonry::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+.loadMoreNote{
+    text-align: center;
+    font-size: 16px;
+    color: #8fa9b2;
+    margin-top: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 
@@ -650,6 +667,8 @@ nav{
 			    right: 0;
 			    font-size: 16px;
 			    color: white;
+			    cursor: pointer;
+			    text-decoration: none;
 			}
 		}
 		input{

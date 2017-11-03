@@ -46,8 +46,8 @@
     </form>
     <div class="action my-links">
           <li>
-            <a href="">注册</a>&nbsp;/&nbsp;</li>
-          <li><a id="btn-cfb-login" href="">登录</a></li>
+            <a href="help2.html">注册</a>&nbsp;/&nbsp;</li>
+          <li><a class="deng" style="cursor: pointer;">登录</a></li>
     </div>
   </div>
 </div>
@@ -66,11 +66,11 @@
 		</div>
 		<div class="NOW">
 			<img src="http://cfbassets.b0.upaiyun.com/assets/v2/image2_content1-238aabc43f4ba9551fc9a5dd000cc784.png" alt="">
-			<a></a>
+			<a class="download"></a>
 			<div>
 				<span>关注我们：
-				<a href=""></a>
-				<a href=""></a></span>
+				<a href="https://weibo.com/u/3169106402" target="-blank"></a>
+				<a class="WeChat"></a></span>
 			</div>
 		</div>
 	</div>
@@ -146,9 +146,50 @@
     </div>
 </div>
 <a href="#" class="Stick"></a>
-
-
-
+<div class="screen">
+    <div class="screen1">
+        <p><a></a></p>
+    </div>
+</div>
+<div class="screen4">
+    <div class="screen5">
+        <p><a></a></p>
+    </div>
+</div>
+<div class="dengluye">
+  <div class="denglu">
+    <div class="zhanghu">
+      <h1>登录账户
+        <i></i>
+        <a href="help2.html">注册</a>
+      </h1>
+      <input type="text" placeholder="邮箱或手机">
+      <input type="password" placeholder="密码">
+      <div class="jizhu">
+        <span><input type="checkbox">记住我</span>
+        <a>忘记密码?</a>
+        <p>邮箱或手机不能为空</p>
+      </div>
+      <button>登录</button>
+      <div class="mode">
+        <p class="wire"></p>
+        <p class="else">其他登录方式</p>
+        <p class="wire"></p>
+      </div>
+      <div class="qita">
+        <a href="" class="One">
+          <i></i>
+        </a>
+        <a href="" class="Two">
+          <i></i>
+        </a>
+        <a href="" class="Three">
+          <i></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -156,7 +197,12 @@
 <script type="text/javascript" src="js/swiper.min.js"></script>
 
 <script type="text/javascript">
-	
+	var WeChat = document.querySelector('.WeChat');
+  var download = document.querySelector('.download');
+  var close = document.querySelector('.screen1 a');
+  var screen = document.querySelector('.screen');
+  var screen4 = document.querySelector('.screen4');
+  var close1 = document.querySelector('.screen5 a');
   var dingzhi = document.querySelectorAll('.dingzhi');
   var subitem = document.querySelectorAll('.subitem');
   var uls = document.querySelector('.lunbo3 ul');
@@ -199,7 +245,28 @@
          Stick1.style.display = 'block';
       }
     }
-   
+   WeChat.onclick = function(){
+      screen.style.display = 'block';
+   }
+   close.onclick = function(){
+       screen.style.display = 'none';
+       screen4.style.display = 'none';
+   }
+   download.onclick = function(){
+      screen4.style.display = 'block';
+   }
+   close1.onclick = function(){
+       screen4.style.display = 'none';
+   }
+   var deng = document.querySelector('.deng');
+var dengluye = document.querySelector('.dengluye');
+var guanbi = document.querySelector('.zhanghu h1 i');
+deng.onclick = function(){
+  dengluye.style.display = 'block';
+}
+guanbi.onclick = function(){
+  dengluye.style.display = 'none';
+}
 </script>
 </body>
 </html>

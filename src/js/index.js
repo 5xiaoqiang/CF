@@ -31,11 +31,18 @@ require(['jquery'],function($){
 	})
 	var mark = document.querySelectorAll('.pop-mark');
 	var inner = document.querySelector('.inner');
+	var carousel1 = document.querySelector('.carousel1');
 	var detail = document.querySelectorAll('.detail');
 	var Masquerade = document.querySelectorAll('.Masquerade');
 	var page = document.querySelectorAll('.page li');
 	var index = 0;
 	lunbo();
+	carousel1.onmouseenter = function(){
+		clearInterval(timer);
+	}
+	carousel1.onmouseleave = function(){
+		lunbo();
+	}
 	function lunbo(){
 		timer = setInterval(function(){
 			for(var i = 0;i< page.length;i++){
@@ -68,27 +75,63 @@ require(['jquery'],function($){
 		inner.style.left = (-1180 * index) +'px';
 	});
 	
-	var Pinterest = document.querySelector('.Pinterest');
+	
 	$(function(){
-		$.ajax({
-	            url: '../json/aa.json',
-	            type: 'Get',
-	            dataType: 'json',
-	            // data: {
-	            //     offset: 0,
-	            // },
-	            success:function(data){
-	                 // console.log(data.items);
+
+	            $.getJSON('../json/aa.json', function(data){
+					var uls= document.querySelectorAll('#masonry ul');
+	                 console.log(data.items);
 	                for(var i = 0; i < data.items.length;i++){
 	                	// console.log(data.items[i].pc[0].rating);
-	                	Pinterest.innerHTML += '<a class="yinxiang box" href="/notes/DdoTNzXrT4-5MLasaVXOkg" title="" target="_blanket"><div class="img-cnt"><img src="'+ data.items[i].pc[0].poi_category +'" alt=""><p class="photo-num">'+ data.items[i].pc[0].rating+'p' +'</p></div><div class="txt-cnt"><p class="txt">'+ data.items[i].pc[0].desc +'</p></div><div class="note-bottom"><span class="fl"><i class="icon-location"></i>'+ data.items[i].pc[0].poi_name +'</span><span class="fr">'+ data.items[i].pc[0].username +'</span></div></a>';
-	               		
-	               }   
-				
-	            }
-	     });
-		 
+	                	var li = document.createElement('li');
+	                	li.innerHTML = '<a class="yinxiang box" href="'+'http://chufaba.me' + data.items[i].pc[0].url +'" title="" target="_blanket"><div class="img-cnt"><img src="'+ data.items[i].pc[0].poi_category +'" alt=""><p class="photo-num">'+ data.items[i].pc[0].rating+'p' +'</p></div><div class="txt-cnt"><p class="txt">'+ data.items[i].pc[0].desc +'</p></div><div class="note-bottom"><span class="fl"><i class="icon-location"></i>'+ data.items[i].pc[0].poi_name +'</span><span class="fr">'+ data.items[i].pc[0].username +'</span></div></a>';
+			            li.children[0].children[0].children[0].onload = function(){
+						//判断ul高度,用来存放ul高度
+							var ulHeightArr = [];
+							for(var j = 0; j < uls.length; j++){
+								ulHeightArr.push(uls[j].offsetHeight);
+							}
+							var minHeight = ulHeightArr[0];
+							var minIndex = 0;
+							for(var k = 0; k < ulHeightArr.length;k++){
+								if(minHeight > ulHeightArr[k]){
+									minHeight = ulHeightArr[k];
+									minIndex = k;
+								}
+							}
+							uls[minIndex].appendChild(this.parentNode.parentNode.parentNode);
 
+						}
+	               }   
+	    		});
+			 $('.loadMoreNote').click(function(){
+			 	$.getJSON('../json/aa.json', function(data){
+					var uls= document.querySelectorAll('#masonry ul');
+	                 console.log(data.items);
+	                for(var i = 0; i < data.items.length;i++){
+	                	// console.log(data.items[i].pc[0].rating);
+	                	var li = document.createElement('li');
+	                	li.innerHTML = '<a class="yinxiang box" href="'+'http://chufaba.me' + data.items[i].pc[0].url +'" title="" target="_blanket"><div class="img-cnt"><img src="'+ data.items[i].pc[0].poi_category +'" alt=""><p class="photo-num">'+ data.items[i].pc[0].rating+'p' +'</p></div><div class="txt-cnt"><p class="txt">'+ data.items[i].pc[0].desc +'</p></div><div class="note-bottom"><span class="fl"><i class="icon-location"></i>'+ data.items[i].pc[0].poi_name +'</span><span class="fr">'+ data.items[i].pc[0].username +'</span></div></a>';
+			            li.children[0].children[0].children[0].onload = function(){
+						//判断ul高度,用来存放ul高度
+							var ulHeightArr = [];
+							for(var j = 0; j < uls.length; j++){
+								ulHeightArr.push(uls[j].offsetHeight);
+							}
+							var minHeight = ulHeightArr[0];
+							var minIndex = 0;
+							for(var k = 0; k < ulHeightArr.length;k++){
+								if(minHeight > ulHeightArr[k]){
+									minHeight = ulHeightArr[k];
+									minIndex = k;
+								}
+							}
+							uls[minIndex].appendChild(this.parentNode.parentNode.parentNode);
+
+						}
+	               }   
+	    		});
+			 })
 	});
 
 

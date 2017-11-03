@@ -45,15 +45,15 @@
     </form>
     <div class="action my-links">
           <li>
-            <a href="/users/register">注册</a>&nbsp;/&nbsp;</li>
-          <li><a id="btn-cfb-login" href="javascript:;">登录</a></li>
+            <a href="help2.html">注册</a>&nbsp;/&nbsp;</li>
+          <li><a class="deng" style="cursor:pointer;">登录</a></li>
     </div>
   </div>
 </div>
 <div class="enjoy">
   <img src="http://img.chufaba.me/357b8493cac1ea0254674b173e8f201d.jpg"/>
     <p class="enjoy1"><img src="http://img.chufaba.me/509a6a9c222d98d164aa3d852a426035.png"/>
-    <button class="btn-now">开始定制</button></p>
+    <a href="http://m.zhinanmao.com/order/?refer=cfb"><button class="btn-now">开始定制</button></p></a>
 </div>
 <div class="enjoy2">
   <div class="HighPoint"><img src="http://img.chufaba.me/7109579202a15331a33d1ac14fa556e3.png"/></div>
@@ -125,7 +125,7 @@
   <div class="inner1">
     <img src="http://img.chufaba.me/35487993164905d28663c265c833e39e.png">
     <div>
-      <button class="btn-now">开始定制</button>
+      <a href="http://m.zhinanmao.com/order/?refer=cfb"><button class="btn-now">开始定制</button></a>
     </div>
   </div>
 </div>
@@ -136,13 +136,13 @@
             <div class="left">
                 <div class="logo"></div>
                 <ul class="ques">
-                    <a href="/about">
+                    <a href="http://chufaba.me/about">
                         <li>关于我们&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                     </a>
-                    <a href="/faq">
+                    <a href="http://chufaba.me/faq">
                         <li>常见问题&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                     </a>
-                    <a href="/feedbacks/new">
+                    <a href="http://chufaba.me/feedbacks/new">
                         <li>意见反馈</li>
                     </a>
                 </ul>
@@ -167,6 +167,40 @@
     </div>
 </div>
 
+<div class="dengluye">
+  <div class="denglu">
+    <div class="zhanghu">
+      <h1>登录账户
+        <i></i>
+        <a href="help2.html">注册</a>
+      </h1>
+      <input type="text" placeholder="邮箱或手机">
+      <input type="password" placeholder="密码">
+      <div class="jizhu">
+        <span><input type="checkbox">记住我</span>
+        <a>忘记密码?</a>
+        <p>邮箱或手机不能为空</p>
+      </div>
+      <button>登录</button>
+      <div class="mode">
+        <p class="wire"></p>
+        <p class="else">其他登录方式</p>
+        <p class="wire"></p>
+      </div>
+      <div class="qita">
+        <a href="" class="One">
+          <i></i>
+        </a>
+        <a href="" class="Two">
+          <i></i>
+        </a>
+        <a href="" class="Three">
+          <i></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script type="text/javascript">
@@ -218,6 +252,15 @@
       subitem[this.index].style.display = 'none';
     }
   }
+     var deng = document.querySelector('.deng');
+var dengluye = document.querySelector('.dengluye');
+var guanbi = document.querySelector('.zhanghu h1 i');
+deng.onclick = function(){
+  dengluye.style.display = 'block';
+}
+guanbi.onclick = function(){
+  dengluye.style.display = 'none';
+}
 </script>
 
 
